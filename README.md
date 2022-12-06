@@ -1,7 +1,7 @@
 # practice_vanillaJS_momentum
 
 * ## 프로젝트 소개
-  * 자바스크립트 연습용 웹 개발
+  * 자바스크립트 웹 개발 연습용
 
 - ## 사용툴
   - VSCODE
