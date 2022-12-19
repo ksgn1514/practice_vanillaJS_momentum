@@ -8,17 +8,17 @@
     <title>Momentum</title>
 </head>
 <body>
-    <form id="login-form">
+    <form id="login-form" class="hidden">
         <input 
         required 
         maxlength="15"
         type="text" 
         placeholder="What is your name?" />
-        <button>Log In</button>
-        <!-- ===<input type="submit" value="Log In"> -->
-    </form>
-    <!-- 폼안에 있는 버튼을 누르거나 인풋 타입이 서브밋이면 자동제출됨 -->
 
+       <input type="submit" value="Log In">
+         <!-- Button대신 submit타입으로 폼안에 있는 버튼생성. 자동제출됨 -->
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
     <script src="app.js"></script>
     
 </body>
