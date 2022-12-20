@@ -8,6 +8,7 @@
     <title>Momentum</title>
 </head>
 <body>
+    <h2 id="clock">00:00:00</h2>
     <form id="login-form" class="hidden">
         <input 
         required 
@@ -18,8 +19,11 @@
        <input type="submit" value="Log In">
          <!-- Button대신 submit타입으로 폼안에 있는 버튼생성. 자동제출됨 -->
     </form>
-    <h2 id="clock">00:00:00</h2>
     <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required />
+    </form>
+    <ul id="todo-list"></ul>
     <div id="quote">
         <span></span>
         <span></span>
@@ -28,6 +32,7 @@
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
 
 </body>
 </html>
