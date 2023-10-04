@@ -8,6 +8,8 @@
   - JavaScript
 
 + ## 機能
-  + ユーザーログイン機能
-  + タスク（Todoリスト）の作成、編集、削除機能
-  + 接続ロケーション、時間、天気確認
+ 以下の機能でHTML/CSSの基本と、JavaScriptの基本的な変数宣言、メソッド、エベントの作成とJSON, Ajax, DOM, APIを理解する。
+  + LocalStorageでユーザーログイン機能
+  + LocalStorageでタスク（Todoリスト）の追加、編集、削除(CRUD)機能
+  + 接続ロケーション、現在時刻の表示
+  + OpenWeather APIを利用した天気予報表示
