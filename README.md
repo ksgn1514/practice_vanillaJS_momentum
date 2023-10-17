@@ -8,7 +8,7 @@
   - JavaScript
 
 + ## 機能
- 以下の機能でHTML/CSSの基本と、JavaScriptの基本的な変数宣言、メソッド、エベントの作成とJSON, Ajax, DOM, APIを理解する。
+ 以下の機能でHTML/CSS、JavaScriptの基本的な変数宣言、メソッド、エベントの作成とJSON, Ajax, DOM, APIを理解する。
   + LocalStorageでユーザーログイン機能
   + LocalStorageでタスク（Todoリスト）の追加、編集、削除(CRUD)機能
   + 接続ロケーション、現在時刻の表示
