@@ -82,8 +82,8 @@ const quotesList = [
 ]
 
 
-const quote = quotes.querySelector("span:first-child")
-const author = quotes.querySelector("span:last-child");
+const quote = quotes.querySelector(".quote")
+const author = quotes.querySelector(".author");
 
 const todaysQuote= quotesList[Math.floor(Math.random() * quotesList.length)];
 quote.innerText = todaysQuote.quote;
