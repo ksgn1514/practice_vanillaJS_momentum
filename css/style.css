@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Gloria+Hallelujah&display=swap');
+
 .hidden {
     display: none !important;
 }
@@ -5,12 +7,11 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 html,
 body {
+    font-family: 'agbalumo';
     width: 100%;
     height: 100%;
 }
@@ -33,9 +34,48 @@ body {
     align-items: center;
 }
 
+#login-box #nameInput {
+
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    :focus {
+        color: #212529;
+        background-color: #fff;
+        border-color: #86b7fe;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    }
+
+}
+
+#login-box #button {
+    margin-top: 10px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    padding: 0 24px;
+    border-radius: 50px;
+    min-width: 220px;
+    height: 25px;
+    font-size: 18px;
+    background-color: #03a9f4;
+    font-weight: 500;
+    color: #222;
+}
+
 #todo-box {
     width: 40%;
-    height: 50%;
+    height: 60%;
     background-color: #fff;
     position: absolute;
     border-radius: 10px;
@@ -46,24 +86,128 @@ body {
     box-shadow: 0 3px 40px -20px #000;
 }
 
-#info-box {
-    width: 350px;
+#todo-form input {
+    outline: none;
+    display: block;
+    background: rgba(black, 0.1);
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    background-color: lightgray;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    transition: 0.3s ease;
+
+    :focus {
+        color: white;
+        background-color: white;
+    }
+}
+
+#todo-form input:focus {
+    background-color: white;
+    color: black;
+}
+
+#todo-lists {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.4rem;
+    background: whitesmoke;
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    place-items: right;
+    min-height: 60%;
+}
+
+ul {
+    list-style-position: inside;
+    width: 100%;
+    max-width: 90%;
+    background: white;
+    box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
+    padding: 0;
+    margin: 0;
+    border-radius: 0.1rem;
+}
+
+li {
+    font-family: 'Gloria Hallelujah', cursive;
+    padding: 0 0 0 1rem;
+}
+
+li:not(:last-child) {
+    border-bottom: 1px solid lightblue;
+}
+
+li:first-child {
+    margin-top: 1rem;
+}
+
+li:last-child {
+    margin-bottom: 1rem;
+}
+
+#links-box {
+    width: 35%;
+    height: 20%;
     background-color: #fff;
     position: absolute;
     border-radius: 10px;
     padding: 20px;
-    right: 5%;
-    top: 10%;
-    color: white;
+    left: 55%;
+    top: 50%;
     background-color: rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(155, 155, 155, 0.4);
     box-shadow: 0 3px 40px -20px #000;
-    justify-content: center;
-    align-items: center;
-
+    color: #fff;
 }
-#clock{
-    font-size:100px;
+
+#links-box a {
+    float: left;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+
+    :hover {
+        opacity: 0.3;
+    }
+}
+
+#links-box a img {
+    width: 50px;
+    height: 50px;
+}
+
+#info-box {
+    width: 35%;
+    height: 30%;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 10px;
+    padding: 20px;
+    left: 55%;
+    top: 10%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(155, 155, 155, 0.4);
+    box-shadow: 0 3px 40px -20px #000;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle
+}
+
+
+
+#clock {
+    font-size: 80px;
 }
 
 #quotes {
@@ -85,6 +229,7 @@ body {
 }
 
 #quotes .quote {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     font-weight: 600;
     font-style: italic;
