@@ -11,27 +11,49 @@ function saveToDos() {
 }
 
 function deleteToDo(event) {
-    const li = event.target.parentElement;
+    const div = event.target.parentElement;
+    const li = div.parentElement;
     li.remove();
     toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
     saveToDos()
 }
 
+function markTodo() {
+    const div = event.target.parentElement;
+    const li = div.parentElement;
+    if (li.style.textDecoration === "line-through") {
+        li.style.textDecoration = "none";
+    } else {
+        li.style.textDecoration = "line-through";
+    }
+}
 function paintToDo(newTodo) {
+    const div1 = document.createElement("div");
+    div1.setAttribute("style", "float:left;margin-right:10px;");
+    const div2 = document.createElement("div");
+    div2.setAttribute("style", "float:left;margin-right:10px;");
+    const div3 = document.createElement("div");
+
     const checkBox = document.createElement("input");
     checkBox.id = newTodo.id;
     checkBox.type = "checkbox";
+    checkBox.addEventListener("click", markTodo);
+    div1.appendChild(checkBox);
 
     const li = document.createElement("li");
     li.id = newTodo.id;
     const span = document.createElement("span");
     span.innerText = newTodo.text;
+    div3.appendChild(span);
+
     const button = document.createElement("button");
     button.innerText = "❌";
     button.addEventListener("click", deleteToDo);
-    li.appendChild(checkBox);
-    li.appendChild(span);
-    li.appendChild(button);
+    div2.appendChild(button);
+
+    li.appendChild(div1);
+    li.appendChild(div2);
+    li.appendChild(div3);
 
     toDoList.appendChild(li);
 }
